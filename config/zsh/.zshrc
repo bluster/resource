@@ -15,6 +15,7 @@ compinit
 #
 #Environment Variables
 
+export XDG_CONFIG_HOME=~/.config
 export PATH=~/.bin:$PATH
 export EDITOR=vim
 export PROMPT="%n@%m:%F{cyan}%c%f $ "
@@ -62,11 +63,11 @@ function count () {
 }
 
 function my_keyboard () {
-    xmodmap ~/.xmodmaprc
+    zsh ~/.xmodmap_vim
 }
 
 function guest_keyboard () {
-    xmodmap ~/.visitor_keyboard
+    zsh ~/.xmodmap_qwerty
 }
 
 function last () {
